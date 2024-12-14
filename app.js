@@ -10,7 +10,7 @@ const cookieParser = require('cookie-parser');
 app.use(express.json()); //Parses the JSON data sent in the request body.
 app.use(cookieParser()); //Parses the cookies attached to the client request.
 app.use('/api/v1/', products); //Mounts the product routes on the /api/v1/ path.
-app.use('/api/v1/',auth);
+app.use('/api/v1',auth);
 app.use('/api/v1/',order)
 
 // Middleware to handle errors
